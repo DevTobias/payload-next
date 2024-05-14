@@ -21,6 +21,7 @@
     "package.json": ".editorconfig,.gitignore,tsconfig.json",
     "next.config.js": "next-env.d.ts,.env.local",
     "tailwind.config.ts": "postcss.config.js,components.json",
+    "payload.config.ts": "payload-types.ts",
     "*.tsx": "$(capture).*",
     "*.ts": "$(capture).*"
   },

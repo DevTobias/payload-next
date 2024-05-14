@@ -1,11 +1,9 @@
+const { withPayload } = require('@payloadcms/next/withPayload');
+
 /** @type {import('next').NextConfig} */
-module.exports = {
-  output: 'standalone',
-
+module.exports = withPayload({
   reactStrictMode: true,
-  poweredByHeader: false,
-
   experimental: {
     typedRoutes: true,
   },
-};
+});
