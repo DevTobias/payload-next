@@ -1,0 +1,8 @@
+{
+  "name": "@lint/prettier-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^3.2.5"
+  }
+}

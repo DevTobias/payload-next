@@ -1,0 +1,57 @@
+{
+  // !Editor settings
+
+  "cSpell.language": "en,de-de",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.unicodeHighlight.allowedCharacters": { "️": true },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  // !Explorer
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".editorconfig,.gitignore,tsconfig.json",
+    "next.config.js": "next-env.d.ts,.env.local",
+    "tailwind.config.ts": "postcss.config.js,components.json",
+    "*.tsx": "$(capture).*",
+    "*.ts": "$(capture).*"
+  },
+
+  "files.exclude": {
+    "**/package-lock.json": true,
+    "**/node_modules": true,
+    "**/.next": true
+  },
+
+  //! Language features
+
+  // Typescript
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
+  // Tailwind / CSS
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // ESLint
+  "eslint.validate": ["javascript", "typescript", "css", "typescriptreact", "javascriptreact"],
+  "eslint.probe": ["javascript", "typescript", "css", "typescriptreact", "javascriptreact"],
+  "eslint.workingDirectories": ["frontend", "infrastructure/functions"],
+
+  //! Formatters
+  "[json][jsonc][html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript][javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
+}

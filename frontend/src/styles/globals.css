@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-full shadow-[inset_0_0_2px_theme(colors.neutral.400)] dark:shadow-[inset_0_0_2px_theme(colors.neutral.800)];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-neutral-300 dark:bg-neutral-800;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neutral-400 dark:bg-neutral-800;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.disable-transitions {
+  transition-property: none !important;
+}
+
+@layer utilities {
+  .skeleton {
+    @apply animate-pulse bg-neutral-200 dark:bg-neutral-800;
+  }
+
+  .focusable {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-slate-300 dark:focus-visible:ring-offset-slate-950 dark:ring-offset-slate-950;
+  }
+}
+
+@layer utilities {
+  .text-default {
+    @apply text-neutral-950 dark:text-neutral-50;
+  }
+}
+
+@layer utilities {
+  .bg-default {
+    @apply bg-neutral-50 dark:bg-neutral-950;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "payload-next",
+  "private": true,
+  "workspaces": [
+    "modules/*",
+    "frontend",
+    "infrastructure/functions"
+  ],
+  "scripts": {
+    "frontend": "npm run --workspace=frontend",
+    "upgrade-deps": "npx npm-check-updates --workspaces --root -u",
+    "clean": "rimraf -g **/dist **/node_modules **/.next"
+  }
+}
