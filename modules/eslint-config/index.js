@@ -53,6 +53,7 @@ module.exports = {
     // could result into multiple refactoring. Named exports can also help
     // with tree shaking. Thats why they are preferred in general.
     "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
 
     // Sometimes it is just not possible for a value to be null, based on the code before.
     // Typescript doesn't have the ability to detect these cases. Then it's ok to use a no
